@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/almostblack"
+    tools:context=".MovieDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_pelicula_imagen"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/buyTickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black_background"
+            android:background="@drawable/round_button"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="@dimen/paddingButton"
+            android:text="Buy my ticket!"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/almostblack"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:background="@color/grisclaro"
+            android:layout_marginTop="7dp"
+            android:id="@+id/seatsLeft"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="25dp">
+            <TextView
+                android:id="@+id/tv_nombre_pelicula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="30sp"
+                android:textColor="@color/mustard"
+                android:paddingTop="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2.5dp"
+                android:background="@color/mustard"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="45dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pelicula_desc"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:text="Descripcion"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:lineSpacingExtra="4dp"
+            android:padding="25dp"
+            android:scrollbars="vertical"
+            android:overScrollMode="ifContentScrolls"
+            android:gravity="start"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
